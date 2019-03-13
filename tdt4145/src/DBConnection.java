@@ -1,4 +1,4 @@
-package javaServerside;
+
 
 import java.sql.*;
 
@@ -19,14 +19,14 @@ public class DBConnection {
 			// 2. Sette opp statement
 			myStmt = myConn.createStatement();
 			
-			// 3. Kjøre SQL spørring
-				//String med kall for å oppdatere databasen
+			// 3. Kjï¿½re SQL spï¿½rring
+				//String med kall for ï¿½ oppdatere databasen
 			/*String sql = " update students "
 					+ " set fornavn='Petter', etternavn='Solberg' "
 					+ " where student_id=2";
 			myStmt.executeUpdate(sql);
 			*/
-				//Få resultat fra en MySql spørring
+				//Fï¿½ resultat fra en MySql spï¿½rring
 			myRs = myStmt.executeQuery("select * from notat");
 			
 			//4. Bearbeide resultatet som ble returnert fra databasen.
